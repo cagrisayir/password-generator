@@ -11,9 +11,11 @@ function App() {
 		<MantineProvider>
 			<div
 				id='App'
-				className='bg-[#18171F] h-full w-full text-white flex flex-col justify-center items-center pr-5 pl-5'
+				className='bg-[#18171F] h-full w-full text-white flex flex-col gap-5 justify-center items-center pr-5 pl-5'
 			>
-				<p>Password Generator</p>
+				<p className='text-3xl font-semibold font-serif text-gray-800'>
+					Password Generator
+				</p>
 				<PasswordContainer password={password} />
 				<PasswordGenerator handlePassword={setPassword} />
 			</div>

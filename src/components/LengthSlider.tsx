@@ -9,10 +9,10 @@ interface Props {
 
 function LengthSlider({ length, handleLength }: Props) {
 	return (
-		<div className='flex flex-col  pt-3 pb-3 gap-5'>
+		<div className='flex flex-col  pt-3 pb-3 gap-5 font-serif'>
 			<div className='flex flex-row items-center justify-between'>
-				<p className='text-2xl'>Character Length:</p>
-				<p className='text-2xl'>{length}</p>
+				<p className='text-xl'>Character Length:</p>
+				<p className='text-3xl text-[#A4FFAF]'>{length}</p>
 			</div>
 			<Slider
 				value={length}
